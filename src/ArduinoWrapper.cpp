@@ -53,7 +53,7 @@ void ArduinoWrapper::update(){
         ofSendMessage("[Info] Analog: " + ofToString(v));
     }
     else{
-        ofSendMessage("[Info] Arduino NOT connected");
+        ofSendMessage("[Info] Arduino NOT connected"); 
     }
     
     if(ofGetFrameNum() % 90 == 0){
