@@ -7,17 +7,26 @@
 //
 
 #include "OscAdapter.h"
+#include "Settings.h"
 
 OscAdapter::OscAdapter(){
-    host = "localhost";
-    port = 8080;
+    ofAddListener(ofEvents().update, this, &OscAdapter::update);
+
+    
+    host = Settings::getInstance()->getRemoteHost();
+    port = Settings::getInstance()->getRemotePort();
     sender.setup(host, port);
-    cout << "Sending to "<< host << " " << port << endl;
 }
 
 void OscAdapter::sendAction(string msg){
-    
     ofxOscMessage m;
     m.setAddress(msg);
     sender.sendMessage(m);
+}
+
+
+void OscAdapter::update(ofEventArgs &args){
+    ofSendMessage("[Info] OSC " + ofToString(host) + " " + ofToString(port));
+    
+   
 }

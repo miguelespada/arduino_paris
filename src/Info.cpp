@@ -18,10 +18,6 @@ void Info::draw(){
     if(!bInfo) return;
     ofPushStyle();
     
-    ofSetColor(255);
-    ofLine(ofGetMouseX(), 0, ofGetMouseX(), ofGetHeight());
-    ofLine(0, ofGetMouseY(), ofGetWidth(), ofGetMouseY());
-    ofDrawBitmapString(ofToString(ofGetMouseX()) + ", " + ofToString(ofGetMouseY()), ofGetMouseX() + 5, ofGetMouseY() + 15);
     ofDrawBitmapString("fps: " + ofToString((int)ofGetFrameRate()), 5, 15);
     ofDrawBitmapString(info, 5, 30);
     info = "";

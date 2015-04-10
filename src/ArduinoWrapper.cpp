@@ -28,14 +28,12 @@ string ArduinoWrapper::getPort(){
 void ArduinoWrapper::connectArduino(string deviceName){
     bArduinoConnected = arduino->connect(deviceName, 57600);
     ofAddListener(arduino->EInitialized, this, &ArduinoWrapper::setupArduino);
-
 }
 
 //--------------------------------------------------------------
 void ArduinoWrapper::setupArduino(const int & version) {
     ofRemoveListener(arduino->EInitialized, this, &ArduinoWrapper::setupArduino);
     arduino->sendAnalogPinReporting(0, ARD_ANALOG);
-    
 }
 
 //--------------------------------------------------------------

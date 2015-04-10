@@ -25,6 +25,7 @@
 		4998260D19EE5B6F00479458 /* ofxOscReceiver.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 499825FD19EE5B3F00479458 /* ofxOscReceiver.cpp */; };
 		4998260E19EE5B6F00479458 /* ofxOscSender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 499825FF19EE5B3F00479458 /* ofxOscSender.cpp */; };
 		4998261019EE5D2E00479458 /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4998260F19EE5D2E00479458 /* CoreVideo.framework */; };
+		499D796D1AD7C388006C634B /* Settings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 499D796B1AD7C388006C634B /* Settings.cpp */; };
 		49B271FA1AB0AD6300239802 /* ArduinoEvent.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49B271F61AB0AD6300239802 /* ArduinoEvent.cpp */; };
 		49B271FB1AB0AD6300239802 /* ArduinoWrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49B271F81AB0AD6300239802 /* ArduinoWrapper.cpp */; };
 		49B272001AB0B12000239802 /* Info.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49B271FE1AB0B12000239802 /* Info.cpp */; };
@@ -123,6 +124,8 @@
 		499825FF19EE5B3F00479458 /* ofxOscSender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ofxOscSender.cpp; sourceTree = "<group>"; };
 		4998260019EE5B3F00479458 /* ofxOscSender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ofxOscSender.h; sourceTree = "<group>"; };
 		4998260F19EE5D2E00479458 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = ../../../../../../../../System/Library/Frameworks/CoreVideo.framework; sourceTree = "<group>"; };
+		499D796B1AD7C388006C634B /* Settings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Settings.cpp; sourceTree = "<group>"; };
+		499D796C1AD7C388006C634B /* Settings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Settings.h; sourceTree = "<group>"; };
 		49B271F61AB0AD6300239802 /* ArduinoEvent.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArduinoEvent.cpp; sourceTree = "<group>"; };
 		49B271F71AB0AD6300239802 /* ArduinoEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArduinoEvent.h; sourceTree = "<group>"; };
 		49B271F81AB0AD6300239802 /* ArduinoWrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ArduinoWrapper.cpp; sourceTree = "<group>"; };
@@ -364,6 +367,8 @@
 		49B272011AB0B12700239802 /* info */ = {
 			isa = PBXGroup;
 			children = (
+				499D796B1AD7C388006C634B /* Settings.cpp */,
+				499D796C1AD7C388006C634B /* Settings.h */,
 				49B271FE1AB0B12000239802 /* Info.cpp */,
 				49B271FF1AB0B12000239802 /* Info.h */,
 			);
@@ -547,6 +552,7 @@
 				4998260119EE5B6F00479458 /* IpEndpointName.cpp in Sources */,
 				4998260219EE5B6F00479458 /* NetworkingUtils.cpp in Sources */,
 				4998260319EE5B6F00479458 /* UdpSocket.cpp in Sources */,
+				499D796D1AD7C388006C634B /* Settings.cpp in Sources */,
 				4998260419EE5B6F00479458 /* NetworkingUtilsWin.cpp in Sources */,
 				4998260519EE5B6F00479458 /* UdpSocketWin.cpp in Sources */,
 				4998260619EE5B6F00479458 /* OscOutboundPacketStream.cpp in Sources */,

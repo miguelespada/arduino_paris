@@ -18,9 +18,9 @@ class OscAdapter{
     ofxOscSender sender;
 public:
     OscAdapter();
-    void init(){
-        
-    }
+    
+    void update(ofEventArgs &args);
+    
     string host = "localhost";
     int port = 8080;
     void sendAction(string msg);
